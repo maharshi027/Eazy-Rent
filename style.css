@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+  background: rgb(255, 200, 255);
+  font-family: "Overpass", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: calc(var(--bs-gutter-x)* -.5);
+    margin-right: calc(var(--bs-gutter-x)* -.5);
+    margin-top: calc(var(--bs-gutter-y)* -1);
+}
+
+.logo img {
+  width: 110px;
+}
+header {
+  max-width: 90vw;
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  gap: 75px;
+  padding-right: 10px;
+}
+.searchbox input {
+  height: 40px;
+  width: 450px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-right: 20rem;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  background-color: rgb(239, 237, 250);
+}
+.top-head {
+  max-width: 100vw;
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  & a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+.top-head a i {
+  margin-right: 4px;
+}
+.top-head:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transform: scale(1.1);
+}
+.top-head:active {
+  transform: scale(0.95);
+}
+.product-details {
+  max-width: 100vw;
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #fff;
+  margin: 8px 13px;
+}
+.product-details .items {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.product-details .items img {
+  width: 110px;
+  aspect-ratio: 1.2;
+}
+.items h3 {
+  margin: 3px 0px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+}
+.slide {
+  max-width: 100vw;
+  margin: 8px 13px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.carousel-inner {
+  height: 250px;
+}
+.carousel-control-prev-icon {
+  color: #fff;
+}
+.carousel-control-next-icon {
+  color: #000;
+}
+.carousel-control-prev {
+  top: 40%;
+  left: 0;
+  width: 30px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.carousel-control-next {
+  top: 40%;
+  right: 0;
+  width: 30px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 5px 0px 0px 5px;
+}
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 8px 13px;
+}
+section {
+  max-width: 83vw;
+  padding: 15px;
+}
+
+.electronic {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 10px;
+  
+}
+.electronic::-webkit-scrollbar{
+  width: 0;
+}
+.home-apliance {
+  background-color: #fff;
+  max-width: 100vw;
+  margin: 8px 13px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.home-apliance::-webkit-scrollbar{
+  width: 0;
+}
+.electronic-items {
+  text-align: center;
+  & a {
+    text-decoration: none;
+  }
+  & h3 {
+    color: #000;
+    font-size: 15px;
+  }
+  & h2 {
+    color: #000;
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+.electronic-items a img {
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.bike-cars {
+  max-width: 100vw;
+  margin: 8px 13px;
+  background-color: #fff;
+  padding: 15px 10px;
+}
+.text {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 650;
+}
+.section-2 {
+  max-width: 100vw;
+  display: flex;
+}
+.items-section-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 575px;
+}
+.vehicle-items {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 8px;
+  padding: 15px;
+  & img {
+    width: 200px;
+    aspect-ratio: 1;
+  }
+  & h3, h2 {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.sports-car {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items:center;
+  background-image: url('car.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1400px;
+  padding-bottom: 15px;
+}
+.btn {
+  width: 350px;
+  height: 48px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  color: #fff;
+  border: 0;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btn:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "More About";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.btn:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+.scooty {
+  max-width: 100vw;
+  margin: 8px 13px;
+  background-color: #fff;
+  padding: 13px 12px;
+  & h1 {
+    font-size: 30px;
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+    & a {
+      align-items: center;
+      font-size: 15px;
+      font-style: normal;
+    }
+  }
+}
+.bikes-scooty {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.scooty-hiring img {
+  width: 250px;
+}
+
+/*---------------------Footer----------------*/
+
+footer {
+  padding: 20px 15px;
+}
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+  color: #ffffff;
+}
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+& ::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  border-bottom: 0.15rem solid #0062ff;
+  transition: all 0.3s linear;
+}
+& a:hover:after {
+  width: 100%;
+}
+.social-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.22s ease;
+}
+/* Existing CSS remains the same until the media queries */
+
+/* ------------------- Responsive Styles -------------------- */
+
+@media (max-width: 390px) {
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .searchbox input {
+    width: 100%;
+    font-size: 14px;
+    margin-right: 0;
+  }
+  .top-head {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* Product details adjustments */
+  .product-details {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  .product-details .items img {
+    width: 50px;
+  }
+  .items h3 {
+    font-size: 12px;
+  }
+
+  /* Carousel adjustments */
+  .carousel-inner {
+    height: 120px;
+  }
+
+  /* Section 1 adjustments */
+  .section-1 {
+    flex-direction: column;
+    margin: 5px;
+  }
+  section {
+    padding: 10px;
+  }
+  .electronic, .home-apliance {
+    gap: 5px;
+    overflow-x: auto;
+  }
+  .electronic-items a img, .vehicle-items img {
+    width: 80px;
+  }
+  .advertise img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Bike & Cars section adjustments */
+  .bike-cars {
+    padding: 10px;
+  }
+  .text {
+    font-size: 24px;
+  }
+  .items-section-2 {
+    flex-direction: column;
+    height: auto;
+  }
+  .vehicle-items {
+    width: 100%;
+    text-align: center;
+  }
+  .sports-car {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+  }
+  .btn {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  /* Scooty section adjustments */
+  .scooty {
+    padding: 10px;
+  }
+  .scooty h1 {
+    font-size: 16px;
+  }
+  .scooty h1 a {
+    font-size: 12px;
+  }
+  .bikes-scooty {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .scooty-hiring img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 10px;
+  }
+  .footer-classic .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-classic .col-md-4 {
+    margin-bottom: 20px;
+  }
+  .social-container .col {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
