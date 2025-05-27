@@ -1,0 +1,115 @@
+/* ------------------- Responsive Styles -------------------- */
+
+@media screen and (max-width: 768px) {
+    /* Header adjustments */
+    header {
+      /* flex-direction: column; */
+      height: auto;
+      padding: 10px;
+      gap: 10px;
+    }
+    .login-section ul{
+        display: none;
+    }
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    /* Product details adjustments */
+    .product-details {
+      height: auto;
+      gap: 20px;
+      padding: 10px;
+    }
+    .product-details .items img {
+      width: 50px;
+    }
+    .items h3 {
+      font-size: 12px;
+    }
+  
+    /* Carousel adjustments */
+    .carousel-inner {
+      height: 120px;
+    }
+  
+    /* Section 1 adjustments */
+    .section-1 {
+      flex-direction: column;
+      margin: 5px;
+    }
+    section {
+      padding: 10px;
+    }
+    .electronic, .home-apliance {
+      gap: 5px;
+      overflow-x: auto;
+    }
+    .electronic-items a img, .vehicle-items img {
+      width: 80px;
+    }
+    .advertise img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Bike & Cars section adjustments */
+    .bike-cars {
+      padding: 10px;
+    }
+    .text {
+      font-size: 24px;
+    }
+    .items-section-2 {
+      flex-direction: column;
+      height: auto;
+    }
+    .vehicle-items {
+      width: 100%;
+      text-align: center;
+    }
+    .sports-car {
+      width: 100%;
+      height: 150px;
+      background-size: cover;
+    }
+    .btn {
+      width: 150px;
+      font-size: 14px;
+    }
+  
+    /* Scooty section adjustments */
+    .scooty {
+      padding: 10px;
+    }
+    .scooty h1 {
+      font-size: 16px;
+    }
+    .scooty h1 a {
+      font-size: 12px;
+    }
+  
+    /* Footer adjustments */
+    footer {
+      padding: 10px;
+    }
+    .footer-classic .row {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-classic .col-md-4 {
+      margin-bottom: 20px;
+    }
+    .social-container .col {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  /* @media screen and (min-device-width: 390px) and (max-device-width: 1215px)  {
+    .hideonphone{
+      display: none;
+    }
+    .electronic{
+      flex-wrap: wrap;
+    }
+  } */
