@@ -46,6 +46,7 @@ header {
   word-spacing: 2px;
   border: 0;
   outline: 0;
+  border-radius: 10px;
 }
 .login-section{
   display: flex;
@@ -359,7 +360,7 @@ footer {
 .bg-primary {
   color: rgba(255, 255, 255, 0.8);
 }
-.brand-logo-light{
+.brand{
   margin-bottom: 40px;
 }
 .footer-classic a,
